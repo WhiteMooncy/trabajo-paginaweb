@@ -1,22 +1,61 @@
 :root {
-    --purple-heart-50: #f4f1ff;
-    --purple-heart-100: #ece6ff;
-    --purple-heart-200: #dbd1ff;
-    --purple-heart-300: #c1acff;
-    --purple-heart-400: #a37dff;
-    --purple-heart-500: #8749ff;
-    --purple-heart-600: #7b23ff;
-    --purple-heart-700: #660fe3;
-    --purple-heart-800: #5b0ec9;
-    --purple-heart-900: #4c0ea4;
-    --purple-heart-950: #2d0570;
-}
+    /* Verde - Tailwind CSS inspired */
+    --green-50: #f0fdf4;
+    --green-100: #dcfce7;
+    --green-200: #bbf7d0;
+    --green-300: #86efac;
+    --green-400: #4ade80;
+    --green-500: #22c55e;
+    --green-600: #16a34a;
+    --green-700: #15803d;
+    --green-800: #166534;
+    --green-900: #14532d;
+    --green-950: #052e16;
+    }
+  
+  /* Clases de utilidad para la paleta verde */
+  .green-50 { color: var(--green-50); }
+  .bg-green-50 { background-color: var(--green-50); }
+  
+  .green-100 { color: var(--green-100); }
+  .bg-green-100 { background-color: var(--green-100); }
+  
+  .green-200 { color: var(--green-200); }
+  .bg-green-200 { background-color: var(--green-200); }
+  
+  .green-300 { color: var(--green-300); }
+  .bg-green-300 { background-color: var(--green-300); }
+  
+  .green-400 { color: var(--green-400); }
+  .bg-green-400 { background-color: var(--green-400); }
+  
+  .green-500 { color: var(--green-500); }
+  .bg-green-500 { background-color: var(--green-500); }
+  
+  .green-600 { color: var(--green-600); }
+  .bg-green-600 { background-color: var(--green-600); }
+  
+  .green-700 { color: var(--green-700); }
+  .bg-green-700 { background-color: var(--green-700); }
+  
+  .green-800 { color: var(--green-800); }
+  .bg-green-800 { background-color: var(--green-800); }
+  
+  .green-900 { color: var(--green-900); }
+  .bg-green-900 { background-color: var(--green-900); }
+  
+  .green-950 { color: var(--green-950); }
+  .bg-green-950 { background-color: var(--green-950); }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 *{
     margin: 0;
     border: 0;
     padding: 0;
 }
 html, body{
+    background-image: url(../img/fondo.png);
+    font-family: "Open Sans", sans-serif;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -37,7 +76,7 @@ html, body{
     width: 80%;
     margin: auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
@@ -109,7 +148,7 @@ nav {
     left: 0; /* Asegura que esté alineado a la izquierda */
     width: 100%; /* Ocupa todo el ancho de la ventana */
     height: 60px;
-    background-color: #660fe3;
+    background-color: #16a34a;
     border-radius: 0; /* Opcional: elimina bordes redondeados */
     display: flex;
     align-items: center; 
@@ -127,7 +166,7 @@ nav a {
     transition: color 0.3s ease;
 }
 nav a:hover {
-    color: #C39BD3;
+    color: #2d0570;
 }
 .container {
     width: 80%;
@@ -144,7 +183,7 @@ nav a:hover {
 .footer {
     text-align: center;
     padding: 20px;
-    background-color: #2d0570;
+    background-color: #166534;
     color: #FFFFFF;
 }
 .menu-grid {
@@ -274,4 +313,12 @@ nav a:hover {
 .dropdown-menu.show {
     display: block;
 }
-
+.button{
+    background-color: #22c55e;
+    border-radius: 25px ;
+    padding: 5px;
+}
+h3{
+    top: 2px;
+    width: 100%;
+}
