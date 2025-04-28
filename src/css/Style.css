@@ -35,15 +35,12 @@
 .green-950 { color: var(--green-950); }
 .bg-green-950 { background-color: var(--green-950); }
 
-* {
-    margin: 0;
-    border: 0;
-    padding: 0;
-}
 html {
     scroll-behavior: smooth;
 }
 body {
+    margin: 0;
+    padding: 0;
     background-image: url(../img/fondo.png);
     font-family: 'Poppins', sans-serif;
     width: 100%;
@@ -207,6 +204,10 @@ nav a:hover {
     color: #4A235A;
 }
 
+footer{
+    margin: 0;
+    padding: 0;
+}
 .footer {
     text-align: center;
     padding: 20px;
