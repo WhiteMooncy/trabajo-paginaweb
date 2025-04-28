@@ -1,81 +1,123 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CL">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyBuenOscar| Promos</title>
+    <title>MyBuenOscar | Promos</title>
     <link rel="stylesheet" href="../src/css/Res.css">
+    <link rel="icon" type="image/x-icon" href="../src/icons/icon-web.png">
 </head>
 <header>
     <div class="navbar-brand">
         <nav class="navbar">
-            <a href="#" class="navbar-brand">
-                <a href="../frontend">
-                    <img src="../src/bebidas/monster-blanca.png" alt="Logo" style="width: 32px; height: 32px; padding: 0; justify-content: center;">  
-                </a>
+            <a href="../frontend">
+                <img src="../src/bebidas/monster-blanca.png" alt="Logo" style="width: 32px; height: 32px; padding: 0; justify-content: center;">  
             </a>
             <a href="../frontend/carta.html">Carta</a>
             <a href="../frontend/Promos.html">Promos</a>
-            <a href="">Contactanos</a>
-            <a href="#"><img src="../src/icons/carrito-de-compras.png" alt="carrito-de-compras" style="width: 40px; height: auto; padding: 0; justify-content: center;"></a>
+            <details class="dropdown">
+                <summary>Contactanos</summary>
+                <div class="dropdown-menu">
+                    <a href="mailto:MyBuenOscarRestaurant@gmail.com">Correo Electrónico</a>
+                    <a href="tel:+56958917375">Teléfono</a>
+                    <a href="https://wa.me/56958917375" target="_blank">WhatsApp</a>
+                </div>
+            </details>
+            <a href="#" id="cart-link">
+                <img src="../src/icons/carrito-de-compras.png" alt="Carrito de compras" style="width: 40px; height: auto;">
+            </a>
         </nav>
     </div>
 </header>
 <body>
-    <div class="section">
-        <div class="container">
-            <h3>Promos de la semana</h3>
+    <main>
+        <div id="back-container" class="container">
+            <div class="container"><h1>Promociones por Día</h1></div>
+            <div class="menu-grid">
+                <div class="item">
+                    <div class="item-info">
+                        <h3>Lunes - Combo Familiar</h3>
+                        <p>Pollo asado + 2 acompañamientos + 1 bebida 1.5L</p>
+                        <span class="price">$19.990</span>
+                        <button class="button"><h2>Añadir al carro</h2></button>
+                    </div>
+                    <img src="../src/promos/combo-familiar.jpg" alt="Combo Familiar">
+                </div>
+                <div class="item">
+                    <div class="item-info">
+                        <h3>Martes - Promo Pareja</h3>
+                        <p>2 Hamburguesas completas + papas fritas grandes + 2 bebidas.</p>
+                        <span class="price">$14.990</span>
+                        <button class="button"><h2>Añadir al carro</h2></button>
+                    </div>
+                    <img src="../src/promos/promo-pareja.jpg" alt="Promo Pareja">
+                </div>
+                <div class="item">
+                    <div class="item-info">
+                        <h3>Miércoles - Super Sushi Pack</h3>
+                        <p>40 piezas + 2 bebidas + postre sorpresa.</p>
+                        <span class="price">$21.990</span>
+                        <button class="button"><h2>Añadir al carro</h2></button>
+                    </div>
+                    <img src="../src/promos/super-sushi.jpg" alt="Super Sushi">
+                </div>
+                <div class="item">
+                    <div class="item-info">
+                        <h3>Jueves - Monster Pack</h3>
+                        <p>3 Monster Energy a elección por un precio especial.</p>
+                        <span class="price">$5.000</span>
+                        <button class="button"><h2>Añadir al carro</h2></button>
+                    </div>
+                    <img src="../src/promos/monster-pack.jpg" alt="Monster Pack">
+                </div>
+                <div class="item">
+                    <div class="item-info">
+                        <h3>Viernes - Combo Fiesta</h3>
+                        <p>2 Pizzas + 4 bebidas 1.5L</p>
+                        <span class="price">$22.990</span>
+                        <button class="button"><h2>Añadir al carro</h2></button>
+                    </div>
+                    <img src="../src/promos/combo-fiesta.jpg" alt="Combo Fiesta">
+                </div>
+                <div class="item">
+                    <div class="item-info">
+                        <h3>Sábado - Sushito Pack</h3>
+                        <p>10 piezas de sushi + 1 bebida.</p>
+                        <span class="price">$8.990</span>
+                        <button class="button"><h2>Añadir al carro</h2></button>
+                    </div>
+                    <img src="../src/promos/sushito-pack.jpg" alt="Sushito Pack">
+                </div>
+                <div class="item">
+                    <div class="item-info">
+                        <h3>Domingo - Combo Relax</h3>
+                        <p>Pollo + ensalada + papas fritas + bebida.</p>
+                        <span class="price">$18.990</span>
+                        <button class="button"><h2>Añadir al carro</h2></button>
+                    </div>
+                    <img src="../src/promos/combo-relax.jpg" alt="Combo Relax">
+                </div>
+            </div>
         </div>
-        <div class="container">
-            <div class="section">
-                <h3>Dia Lunes</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere exercitationem ex mollitia nam. Pariatur beatae nisi voluptatum non similique nemo possimus quam, voluptatem velit recusandae, itaque, sed nostrum ipsum incidunt!</p>
-            </div>
-            <div class="section">
-                <h3>Dia Martes</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere exercitationem ex mollitia nam. Pariatur beatae nisi voluptatum non similique nemo possimus quam, voluptatem velit recusandae, itaque, sed nostrum ipsum incidunt!</p>
-            </div>
-            <div class="section">
-                <h3>Dia Miercoles</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere exercitationem ex mollitia nam. Pariatur beatae nisi voluptatum non similique nemo possimus quam, voluptatem velit recusandae, itaque, sed nostrum ipsum incidunt!</p>
-            </div>
-            <div class="section">
-                <h3>Dia Jueves</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere exercitationem ex mollitia nam. Pariatur beatae nisi voluptatum non similique nemo possimus quam, voluptatem velit recusandae, itaque, sed nostrum ipsum incidunt!</p>
-            </div>    
-            <div class="section">
-                <h3>Dia Viernes</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere exercitationem ex mollitia nam. Pariatur beatae nisi voluptatum non similique nemo possimus quam, voluptatem velit recusandae, itaque, sed nostrum ipsum incidunt!</p>
-            </div>
-            <div class="section">
-                <h3>Dia Sabado</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere exercitationem ex mollitia nam. Pariatur beatae nisi voluptatum non similique nemo possimus quam, voluptatem velit recusandae, itaque, sed nostrum ipsum incidunt!</p>
-            </div>
-            <div class="section">
-                <h3>Dia Domingo</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere exercitationem ex mollitia nam. Pariatur beatae nisi voluptatum non similique nemo possimus quam, voluptatem velit recusandae, itaque, sed nostrum ipsum incidunt!</p>
+    </main>
+    <footer class="footer">
+        <p>Ubicación: Chile <br>Teléfono: +56 9 5891 7375</p>
+        <div class="section">
+            <div>
+                <p class="social-media">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                        <img src="../src/icons/facebook-icon.png" alt="Facebook" style="width: 32px; margin: 0 10px;">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                        <img src="../src/icons/instagram-icon.png" alt="Instagram" style="width: 32px; margin: 0 10px;">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                        <img src="../src/icons/twitter-icon.png" alt="Twitter" style="width: 32px; margin: 0 10px;">
+                    </a>
+                </p>
             </div>
         </div>
-    </div>
+        <p>©2025 Restaurant MyBuenOscar. Todos los derechos reservados.<br>Desarrollado por los Incervibles</p>
+    </footer>
 </body>
-<br>
-<footer class="footer";">
-    <p>Ubicación: Chile <br>Teléfono: +56 9 5891 7375</p>
-    <div class="section">
-        <div>
-            <p class="social-media">
-                <a href="https://www.facebook.com"></a>
-                    <img src="../src/icons/facebook-icon.png" alt="Facebook" style="width: 32px; margin: 0 10px;">
-                </a>
-                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-                    <img src="../src/icons/instagram-icon.png" alt="Instagram" style="width: 32px; margin: 0 10px;">
-                </a>
-                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
-                    <img src="../src/icons/twitter-icon.png" alt="Twitter" style="width: 32px; margin: 0 10px;">
-                </a>
-        </div>
-    </div>
-    <br>
-    <p>© 2025 Comidas Restoran. Todos los derechos reservados. <br> Desarrollado por los Incervibles</p>
-</footer>
 </html>

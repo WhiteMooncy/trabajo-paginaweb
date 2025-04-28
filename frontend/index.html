@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CL">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +9,22 @@
 <header>
     <div class="navbar-brand">
         <nav class="navbar">
-            <a href="#" class="navbar-brand">
-                <a href="../frontend">
-                    <img src="../src/bebidas/monster-blanca.png" alt="Logo" style="width: 32px; height: 32px; padding: 0; justify-content: center;">  
-                </a>
+            <a href="../frontend">
+                <img src="../src/bebidas/monster-blanca.png" alt="Logo" style="width: 32px; height: 32px; padding: 0; justify-content: center;">  
             </a>
             <a href="../frontend/carta.html">Carta</a>
             <a href="../frontend/Promos.html">Promos</a>
-            <a href="">Contactanos</a>
-            <a href="#"><img src="../src/icons/carrito-de-compras.png" alt="carrito-de-compras" style="width: 40px; height: auto; padding: 0; justify-content: center;"></a>
+            <details class="dropdown">
+                <summary>Contactanos</summary>
+                <div class="dropdown-menu">
+                    <a href="mailto:MyBuenOscarRestaurant@gmail.com">Correo Electrónico</a>
+                    <a href="tel:+56958917375">Teléfono</a>
+                    <a href="https://wa.me/56958917375" target="_blank">WhatsApp</a>
+                </div>
+            </details>
+            <a href="#" id="cart-link">
+                <img src="../src/icons/carrito-de-compras.png" alt="Carrito de compras" style="width: 40px; height: auto;">
+            </a>
         </nav>
     </div>
 </header>
